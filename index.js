@@ -23,7 +23,7 @@ function nextStep(){
 };
 
 function newSound(color){
-    const sound = new Audio("/sounds/" + color + ".mp3");
+    const sound = new Audio("./sounds/" + color + ".mp3");
     sound.play();
 
 }
@@ -68,7 +68,7 @@ function checkAnswer(currentLevel){
             $("body").removeClass("game-over");
         }, 200);
         
-        const audio = new Audio("/sounds/wrong.mp3");
+        const audio = new Audio("./sounds/wrong.mp3");
         audio.play();
         startOver();
     } 
